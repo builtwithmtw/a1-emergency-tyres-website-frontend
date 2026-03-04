@@ -22,7 +22,7 @@ export default function Services() {
                 staggerChildren: 0.1,
             },
         },
-    };
+    } as const;
 
     const item = {
         hidden: { opacity: 0, y: 30 },
@@ -30,7 +30,7 @@ export default function Services() {
             opacity: 1,
             y: 0,
         },
-    };
+    } as const;
 
     return (
         <section id="services" className="py-24 bg-dark relative overflow-hidden">

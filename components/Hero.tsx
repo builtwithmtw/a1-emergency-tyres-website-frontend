@@ -13,7 +13,7 @@ export default function Hero() {
             opacity: 1,
             transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
         }),
-    };
+    } as const;
 
     const child = {
         visible: {
@@ -34,7 +34,7 @@ export default function Hero() {
                 stiffness: 100,
             },
         },
-    };
+    } as const;
 
     return (
         <section className="relative h-screen w-full flex items-center justify-center overflow-hidden diagonal-speed-lines bg-dark">

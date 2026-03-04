@@ -13,12 +13,12 @@ export default function Coverage() {
                 staggerChildren: 0.1,
             },
         },
-    };
+    } as const;
 
     const item = {
         hidden: { opacity: 0, scale: 0.95 },
         visible: { opacity: 1, scale: 1 },
-    };
+    } as const;
 
     return (
         <section id="coverage" className="py-24 bg-dark/95 diagonal-speed-lines relative overflow-hidden">
