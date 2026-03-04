@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A1 Emergency Mobile Tyres | 24/7 Mobile Tyre Fitting & Roadside Assistance UK</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --gold: #d4af37;
+            --orange: #ff9f1c;
+            --dark: #0a0a0a;
+            --dark-soft: #151515;
+            --light: #f5f5f5;
+            --whatsapp-green: #25D366; 
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+            color: #eaeaea;
+            line-height: 1.7;
+            background-image: url('A1logo.png'); 
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+            background-color: var(--dark);
+        }
+
+        /* Overlay opacity reduced to make background image visible outside header */
+        .content-wrap {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.3);
+            min-height: 100vh;
+        }
+
+        header {
+            /* Solid background to block the background image in the prominent header */
+            background: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0.9));
+            background-color: var(--dark); 
+            padding: 80px 20px 90px; 
+            text-align: center;
+            border-bottom: 4px solid var(--gold);
+            position: relative; 
+            overflow: hidden; 
+        }
+        
+        header img {
+            max-width: 250px; 
+            margin: 0;
+            position: absolute; 
+            top: 25px; 
+            left: 25px; 
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin: 0 0 10px;
+            color: var(--gold);
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: var(--gold); /* Gold color for sub-heading */
+        }
+        
+        .cta a {
+            display: inline-block;
+            margin: 10px;
+            padding: 16px 34px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #000;
+            background: linear-gradient(135deg, var(--gold), var(--orange));
+            transition: all 0.3s ease;
+        }
+        .cta a:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        /* --- STEP 2: WHATSAPP BUTTON STYLES (BACKGROUND IS GOLD/ORANGE) --- */
+        .cta .whatsapp-btn {
+            background: linear-gradient(135deg, var(--gold), var(--orange)); /* Same as call button */
+            color: #000;
+            padding: 16px 34px;
+        }
+        .cta .whatsapp-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* --- WHATSAPP ICON STYLES (THE ICON IS GREEN) --- */
+        .cta .whatsapp-btn i {
+            color: var(--whatsapp-green); /* WhatsApp green color */
+            margin-right: 8px; 
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+            /* Section background is now darker for readability over the visible body background */
+            background-color: rgba(10, 10, 10, 0.9);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .h2-container {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 45px;
+            color: var(--gold);
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--orange);
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: var(--orange);
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        .card {
+            background: linear-gradient(180deg, #1b1b1b, #101010);
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            border: 1px solid rgba(212,175,55,0.2);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(255,159,28,0.2);
+        }
+        .card p {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+        .city {
+            margin-bottom: 40px;
+            background: var(--dark-soft);
+            padding: 35px;
+            border-radius: 14px;
+            border-left: 4px solid var(--gold);
+        }
+
+        .map {
+            margin-top: 50px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(212,175,55,0.3);
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 45px 20px;
+            border-top: 4px solid var(--gold);
+        }
+        footer p { margin: 6px 0; color: #ccc; }
+    </style>
+</head>
+<body>
+
+<div class="content-wrap">
+    
+    <header>
+        <img src="A1logo.png" alt="A1 Emergency Mobile Tyres Logo" /> 
+        <h1>A1 Emergency Mobile Tyres</h1>
+        <p>24/7 Premium Roadside Assistance Across the UK</p>
+        <div class="cta">
+            <a href="tel:07450787437">📞 Call 07‑450‑787‑437</a>
+            <a href="https://wa.me/447450787437" target="_blank" class="whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp Now</a> 
+        </div>
+    </header>
+
+    <section>
+        <div class="h2-container">
+            <h2>Our Core Roadside Services</h2>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Mobile Tyre Fitting</h3>
+                <p>
+                    We provide rapid, on‑site 24/7 mobile tyre replacement for all vehicle types—cars, vans, and light commercial vehicles. If your tyre is irreparable, we carry a vast stock of new tyres to fit your vehicle immediately, minimizing your downtime.
+                </p>
+                <p>
+                    * Available for all major makes and models.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Emergency Puncture Repair</h3>
+                <p>
+                    Our technicians are experts in assessing and safely repairing punctures according to British standards (BS AU 159). If the puncture is within the legal repair area and structural integrity is maintained, we'll get you back on the road safely and economically.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Locking Wheel Nut Removal</h3>
+                <p>
+                    Lost or damaged locking wheel nuts are no problem. We use specialized, non‑destructive equipment to remove all types of locking nuts without causing damage to your alloy wheels. This service is fast, professional, and available 24 hours a day.
+                </p>
+            </div>
+            <div class="card">
+                <h3>TPMS Sensors & Repairs</h3>
+                <p>
+                    Tyre Pressure Monitoring System (TPMS) lights coming on? We diagnose and repair or replace faulty sensors, recalibrate your system, and ensure your vehicle is compliant and safe. A functioning TPMS is critical for fuel efficiency and safety.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Emergency Jump Start Service</h3>
+                <p>
+                    A dead battery can happen at any time. Our mobile units are equipped with high‑powered jump starters to quickly revive your vehicle, whether you are at home, work, or stranded roadside. Fast response times guaranteed.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="h2-container">
+            <h2>Rapid 24/7 Response in Our Core Service Areas</h2>
+        </div>
+        
+        <div class="grid">
+            <div class="city">
+                <h3>Bedfordshire</h3>
+                <p>Rapid 24/7 emergency tyre services and jump starts across Bedford, Luton, Dunstable, and all surrounding areas. We prioritize quick arrival times to reduce your wait.</p>
+            </div>
+            <div class="city">
+                <h3>Buckinghamshire</h3>
+                <p>Reliable roadside tyre assistance, puncture repair, and locking nut removal throughout Milton Keynes, Aylesbury, High Wycombe, and the wider county.</p>
+            </div>
+            <div class="city">
+                <h3>Cambridgeshire</h3>
+                <p>Fast response mobile tyre replacement and TPMS services across Cambridge, Ely, Huntingdon, and all major roadways.</p>
+            </div>
+            <div class="city">
+                <h3>Hertfordshire</h3>
+                <p>24/7 emergency tyre fitting and battery assistance for Watford, St Albans, Hemel Hempstead, and every corner of Hertfordshire.</p>
+            </div>
+            <div class="city">
+                <h3>Northamptonshire</h3>
+                <p>Professional roadside tyre services covering Northampton, Kettering, Corby, and all major towns and villages, day or night.</p>
+            </div>
+            <div class="city">
+                <h3>Peterborough & Essex</h3>
+                <p>Immediate roadside tyre repairs and replacements in Peterborough and premium mobile assistance across key routes and towns in Essex.</p>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000000.0!2d-0.5!3d52.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876274483a90321%3A0x8670498e21a30349!2sCentral%20England%2C%20UK!5e0!3m2!1sen!2suk!4v1675276800000!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>A1 Emergency Mobile Tyres</strong></p>
+        <p>24/7 Emergency Mobile Tyre & Roadside Assistance – Covering Multiple UK Counties</p>
+        <p>📞 **Immediate Help:** 07‑450‑787‑437</p>
+        <p>© 2026 A1 Emergency Mobile Tyres. All Rights Reserved.</p>
+    </footer>
+
+</div> </body>
+</html>
