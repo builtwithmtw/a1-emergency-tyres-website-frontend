@@ -59,7 +59,7 @@ export default function Hero() {
             </motion.div>
 
             <div className="container mx-auto px-6 z-10 text-center">
-                <motion.div
+                <motion.h1
                     variants={container}
                     initial="hidden"
                     animate="visible"
@@ -74,7 +74,7 @@ export default function Hero() {
                             {word}
                         </motion.span>
                     ))}
-                </motion.div>
+                </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}

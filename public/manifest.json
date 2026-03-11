@@ -1,0 +1,16 @@
+{
+    "name": "A1 Emergency Mobile Tyres",
+    "short_name": "A1 Tyres",
+    "description": "24/7 Roadside Emergency Tyre Fitting & Repair",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0F0F0F",
+    "theme_color": "#FFC107",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        }
+    ]
+}
